@@ -206,7 +206,6 @@ root@codespaces-601265:/workspaces/copy-fail-challenge-B# history
    66  mount -t devtmpfs devtmpfs /dev 2>/dev/null || true
    67  /bin/busybox ifconfig lo 127.0.0.1 up 2>/dev/null || true
    68  /bin/busybox ifconfig eth0 10.0.2.15 netmask 255.255.255.0 up 2>/dev/null || true
-   69  /bin/busybox route add default gw 10.0.2.2 2>/dev/null || true
    70  echo "nameserver 10.0.2.3" > /etc/resolv.conf
    71  echo "nameserver 8.8.8.8" >> /etc/resolv.conf
    72  exec /bin/busybox su - student
